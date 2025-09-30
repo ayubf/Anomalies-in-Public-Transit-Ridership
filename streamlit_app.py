@@ -1,13 +1,18 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(
+    page_title="Anomalies in Public Transit Ridership",
+    page_icon=":light_rail:"
+)
+
 header_img = Image.open("data/images/featureheader_busandtrain_washington.jpg")
 st.image(header_img, caption="A CTA Bus and Train. Source: Transit Chicago / CTA", use_container_width=True)
 
 """
 
 # Anomalies in Public Transit Ridership
-
+##### *By Ayub Farah*
 Public transit in the United States has a long history: according to the Federal Transit Administration, the first publicly operated ferry carried passengers 
 between Chelsea and Boston as early as 1630, and the first subways and cable rail lines appeared in the mid- to late-1800s. After World War II, the rise of 
 automobile ownership shifted much investment toward highways, often at the expense of urban transit systems. In recent years, however, many cities have renewed 
