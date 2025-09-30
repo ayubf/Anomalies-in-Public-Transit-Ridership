@@ -50,8 +50,9 @@ Target schema:
 The datasets available through the source portals allowed for filtering and aggregation before download. Specifically, to keep the study consistent, 
 we have to consider a window where all dates in the datasets overlap, so we cut off from a minimum start to a minimum end date. 
 
-The CTA (Chicago Transit Authority) ridership dataset already includes a `total_rides` column, so only the `Date` column needed renaming. 
+The CTA (Chicago Transit Authority) ridership dataset already includes a `total_rides` column, but the `Date` column needed renaming. 
 Similarly, the WMATA (Washington Metropolitan Area Transit Authority) dataset has a `Grand Total` column, though the `Date` column used a different format. 
+For both the CTA and WMATA datasets, the number of total rides is in the form of a string and some include commas, so conversion was needed.
 New York City's transit system differs from the other two cities because a significant portion is made up of ferry lines. 
 For this reason, we combine ridership data from three separate datasets: one for the MTA (bus, subway, etc.) and two for the NYC and Staten Island ferries.
 
