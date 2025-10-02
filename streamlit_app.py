@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 header_img = Image.open("data/images/featureheader_busandtrain_washington.jpg")
-st.image(header_img, caption="A CTA Bus and Train. Source: Transit Chicago / CTA", use_container_width=True)
+st.image(header_img, caption="A CTA Bus and Train | Transit Chicago / CTA", use_container_width=True)
 
 nyc_ridership_data = pd.read_csv("data/processed/nyc_ridership_data.csv")
 chicago_ridership_data = pd.read_csv("data/processed/chicago_ridership_data.csv")
@@ -136,3 +136,14 @@ The results show that New York City has the sharpest decrease in ridership as ex
 in percent changes per holiday, despite the larger share of public sector or public sector adjacent workers in Washington D.C.
 
 """
+"""
+
+## COVID-19 and Public Transit 
+
+"""
+
+covid_section_image = Image.open("data/images/mta_covid.jpeg")
+st.image(covid_section_image, caption="A sign inside an MTA bus tells riders to take essential trips only. | AP Photo/John Minchillo", use_container_width=True)
+
+
+covid_date_range = None
