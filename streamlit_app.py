@@ -146,4 +146,17 @@ covid_section_image = Image.open("data/images/mta_covid.jpeg")
 st.image(covid_section_image, caption="A sign inside an MTA bus tells riders to take essential trips only. | AP Photo/John Minchillo", use_container_width=True)
 
 
-covid_date_range = None
+covid_date_range = ("03/15/2020", "06/15/2021")# Justify this range btw
+
+"""
+
+In late 2019, a mysterious sickness appears in Wuhan, China. Doctors describe it as pneumonia-like and note that standard treatments have little effect on it.
+Through the first few months of 2020, this disease spreads across the globe and by March 2020, reported cases began to appear in multiple U.S states.
+The first positive test for COVID-19 in Illinois was confirmed in January, while it arrived in New York State and Washington D.C at the start of March.
+New York State issued a stay-at-home order on March 20, Illinois issued a similar order a week later, and Washington D.C officials followed 3 days after Illinois. 
+
+Each of these stay-at-home orders ended at different dates, and some were extended multiple times. To study the effects of the pandemic and the government response 
+on transit ridership, we choose a reasonable range beginning in March 15, 2020 and ending in June 15, 2021. 
+
+
+"""
